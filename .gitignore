@@ -1,0 +1,8 @@
+.DS_Store
+Pipfile*
+Pipfile.lock
+.pytest_cache
+.vscode
+.idea
+/out
+*.class
