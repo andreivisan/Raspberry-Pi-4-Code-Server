@@ -189,7 +189,7 @@ After the OS is burnt, the SD card will be automatically ejected. Take it out an
    After=network.target
 
    [Service]
-   Type=simple
+   Type=exec
    Environment=PASSWORD=code-server-password
    ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:8080 --user-data-dir /var/lib/code-server --auth password
    Restart=always
