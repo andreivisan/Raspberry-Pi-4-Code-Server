@@ -189,14 +189,15 @@ After the OS is burnt, the SD card will be automatically ejected. Take it out an
    After=network.target
 
    [Service]
-   Type=exec
+   Type=simple
    Environment=PASSWORD=code-server-password
-   ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:8080 --user-data-dir /var/lib/code-server --auth password
+   ExecStart=code-server --bind-addr 0.0.0.0:8080 --user-data-dir /var/lib/code-server --auth password
    Restart=always
 
    [Install]
    WantedBy=multi-user.target
    ```
+   `$ sudo mkdir /var/lib/code-server`
 
    `$ sudo systemctl daemon-reload`
 
