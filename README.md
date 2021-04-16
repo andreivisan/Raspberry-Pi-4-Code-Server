@@ -127,7 +127,7 @@ After the OS is burnt, the SD card will be automatically ejected. Take it out an
 
     Add `sh /root/usb.sh` to **_/etc/rc.local_** file before `exit 0` line.
 
-    After reboot `$ sudo reboot` the Pi4 will show up as a ethernet device with an IP address of 10.55.0.1 and will assign the device you plug it into an IP address via DHCP. This means you can just ssh to pi@10.55.0.1 to start using it.
+    After reboot `$ sudo reboot` the Pi4 will show up as a ethernet device with an IP address of 10.55.0.1 and will assign the device you plug it into an IP address via DHCP. This means you can just ssh to pi@10.55.0.1 to start using it. If after reboot you can't see it as a ethernet device, just shut it down, disconenct it from the iPad and reconnect it again and evetything should be fine.
 
 ## Setting up Code-Server on Raspberry Pi 4
 
