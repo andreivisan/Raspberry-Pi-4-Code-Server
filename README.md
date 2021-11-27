@@ -216,3 +216,25 @@ After the OS is burnt, the SD card will be automatically ejected. Take it out an
 ## Access Code-Server from the iPad
 
 On the iPad go to `http://10.55.0.1:8080` and login with the password you set above and that's it! Enjoy coding on your iPad!
+
+## Update Code-Server
+    
+    `$ sudo apt-get update`
+    
+    If the command above gives you an error then run 
+    
+    `$ sudo apt update`
+
+    `$ sudo apt-get upgrade`
+    
+    Upgrade NPM
+    
+    `$ sudo npm install -g npm`
+    
+    Uninstall Code-Server
+    
+    `$ sudo npm uninstall -g code-server`
+    
+    Install the new version of Code-Server
+    
+    `$ sudo npm i -g --unsafe-perm code-server`
